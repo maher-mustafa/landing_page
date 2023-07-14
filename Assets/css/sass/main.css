@@ -1,0 +1,156 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(177, 154, 23, 0.781);
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  z-index: 99999999;
+  padding: 15px 35px;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+}
+.navbar .navbar-toggle {
+  display: none;
+  color: #fff;
+}
+@media screen and (max-width: 991px) {
+  .navbar .navbar-toggle {
+    display: block;
+  }
+}
+
+.navbar-logo {
+  width: 20%;
+  margin-left: 100px;
+}
+@media (max-width: 767px) {
+  .navbar-logo {
+    margin-left: 50px;
+  }
+}
+.navbar-logo img {
+  width: 30px;
+}
+
+.nav-menu {
+  width: 40%;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  transition: display 2s;
+}
+@media (max-width: 991px) {
+  .nav-menu {
+    display: block;
+    padding: 10px 20px;
+    background-color: rgb(172, 169, 169);
+    position: absolute;
+    display: none;
+    right: -100%;
+    top: 80px;
+    width: 80%;
+  }
+}
+.nav-menu .fa-close {
+  position: relative;
+  right: -98%;
+  visibility: hidden;
+}
+@media (max-width: 991px) {
+  .nav-menu .fa-close {
+    visibility: visible;
+  }
+}
+
+@media (max-width: 991px) {
+  .nav-item {
+    margin: 25px;
+  }
+}
+
+.nav-link {
+  text-decoration: none;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  color: #fff;
+}
+
+.home {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  padding-top: 5%;
+}
+@media screen and (max-width: 867px) {
+  .home {
+    flex-direction: column;
+  }
+}
+
+.heading {
+  padding-top: 10%;
+  color: #fff;
+  width: 45%;
+}
+@media screen and (max-width: 867px) {
+  .heading {
+    width: 100%;
+  }
+}
+
+#heading__title {
+  margin: 10px 0;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+
+.heading__disc {
+  margin: 10px;
+}
+
+.image {
+  width: 45%;
+}
+@media screen and (max-width: 867px) {
+  .image {
+    width: 100%;
+  }
+}
+.image img {
+  height: 73vh;
+}
+@media screen and (max-width: 300px) {
+  .image img {
+    width: 100%;
+  }
+}
+
+.images__item {
+  display: flex;
+  width: 20%;
+  margin: auto;
+}
+.images__item li {
+  list-style: none;
+}
+.images__item li img {
+  width: 100%;
+}
+
+.heading__btn {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 10px;
+}/*# sourceMappingURL=main.css.map */
